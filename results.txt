@@ -21,6 +21,12 @@ number_of_experiments=10,
     getml    accuracy: mean:  0.886 max:  0.904 median:  0.884 std:  0.008
     xgboost  accuracy: mean:  0.879 max:  0.897 median:  0.877 std:  0.010
 
+num_features_fast_prop=600, 
+number_of_experiments=10,
+fixed_split=true
+    getml    accuracy: mean:  0.910 max:  0.910 median:  0.910 std:  0.000
+    xgboost  accuracy: mean:  0.888 max:  0.888 median:  0.888 std:  0.000
+
 num_features_fast_prop=650, 
 number_of_experiments=10,
     getml    accuracy: mean:  0.884 max:  0.904 median:  0.882 std:  0.009
@@ -33,6 +39,9 @@ num_features_fast_prop=700,
 num_features_fast_prop=800, 
     getml    accuracy: mean:  0.887 max:  0.904 median:  0.883 std:  0.012
     xgboost  accuracy: mean:  0.883 max:  0.894 median:  0.880 std:  0.008
+
+
+
 
 train=0.7, 
 test=0.3, 
