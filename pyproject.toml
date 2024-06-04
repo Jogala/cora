@@ -1,0 +1,55 @@
+[tool.poetry]
+    name = "cora"
+version = "1.0.0"
+description = "Example how to setup a python project"
+readme = "README.md"
+authors = [
+    "Joachim Rosenberger <joachim.h.rosenberger@gmail.com>",
+]
+
+# include the package and all sub packages in the src folder namespace
+packages = [{include = "cora"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+getml = "1.4.0"
+colorama = "^0.4"
+colorlog = "^6.8"
+PyYAML = "^6.0"
+requests = "^2.31.0"
+pandas = "^2.2.0"
+pydantic = "^2.6.1"
+openpyxl = "^3.1.2"
+pydantic_numpy =  "*"
+seaborn = "^0.13.2"
+scipy = "^1.13.0"
+scikit-learn = "^1.4.2"
+xgboost = "^2.0.3"
+numpy = "*"
+pyqt5-qt5 = "=5.15.2"
+pyqt6 = "^6.7.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^5.2"
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^69.1.0"
+ipykernel = "^6.25"
+ipython = "^8.16"
+wheel = "^0.42.0"
+twine = "^5.0.0"
+ruff = "^0.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+
+
+[tool.ruff.format]

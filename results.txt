@@ -1,0 +1,87 @@
+train=0.7, 
+test=0.3, 
+number_of_experiments=10,
+fast_prop: minimal
+relboost: off
+num_features_fast_prop=100, 
+results:
+    getml    accuracy: mean:  0.882 max:  0.900 median:  0.884 std:  0.010
+    xgboost  accuracy: mean:  0.877 max:  0.895 median:  0.879 std:  0.010
+
+num_features_fast_prop=200, 
+    getml    accuracy: mean:  0.884 max:  0.892 median:  0.881 std:  0.006
+    xgboost  accuracy: mean:  0.880 max:  0.889 median:  0.876 std:  0.006
+
+num_features_fast_prop=400, 
+    getml    accuracy: mean:  0.887 max:  0.902 median:  0.883 std:  0.011
+    xgboost  accuracy: mean:  0.885 max:  0.895 median:  0.880 std:  0.007
+
+num_features_fast_prop=600, 
+number_of_experiments=10,
+    getml    accuracy: mean:  0.886 max:  0.904 median:  0.884 std:  0.008
+    xgboost  accuracy: mean:  0.879 max:  0.897 median:  0.877 std:  0.010
+
+num_features_fast_prop=650, 
+number_of_experiments=10,
+    getml    accuracy: mean:  0.884 max:  0.904 median:  0.882 std:  0.009
+    xgboost  accuracy: mean:  0.880 max:  0.897 median:  0.879 std:  0.009
+
+num_features_fast_prop=700, 
+    getml    accuracy: mean:  0.887 max:  0.900 median:  0.884 std:  0.010
+    xgboost  accuracy: mean:  0.884 max:  0.896 median:  0.884 std:  0.010
+
+num_features_fast_prop=800, 
+    getml    accuracy: mean:  0.887 max:  0.904 median:  0.883 std:  0.012
+    xgboost  accuracy: mean:  0.883 max:  0.894 median:  0.880 std:  0.008
+
+train=0.7, 
+test=0.3, 
+number_of_experiments=10,
+num_features_fast_prop=100, 
+fast_prop: default
+relboost: off
+results:
+    getml    accuracy: mean:  0.879 max:  0.896 median:  0.879 std:  0.009
+    xgboost  accuracy: mean:  0.876 max:  0.891 median:  0.878 std:  0.008
+
+
+train=0.7, 
+test=0.3, 
+number_of_experiments=10,
+num_features_fast_prop=100, 
+fast_prop: all
+relboost: off
+results:
+    getml    accuracy: mean:  0.817 max:  0.883 median:  0.802 std:  0.043
+    xgboost  accuracy: mean:  0.812 max:  0.883 median:  0.797 std:  0.045
+
+
+train=0.7, 
+test=0.3, 
+number_of_experiments=10,
+num_features_fast_prop=200, 
+fast_prop: all
+relboost: off
+results:
+    getml    accuracy: mean:  0.874 max:  0.886 median:  0.876 std:  0.010
+    xgboost  accuracy: mean:  0.870 max:  0.892 median:  0.870 std:  0.013
+
+
+train=0.7, 
+test=0.3, 
+number_of_experiments=3,
+num_features_relboost=50, 
+fast_prop: off
+relboost: on
+results:
+    getml    accuracy: mean:  0.877 max:  0.880 median:  0.880 std:  0.004
+    xgboost  accuracy: mean:  0.871 max:  0.878 median:  0.871 std:  0.005
+
+
+train=0.7, 
+test=0.3, 
+number_of_experiments=10,
+num_features_fast_boost=100,
+results:
+    getml    accuracy: mean:  0.889 max:  0.892 median:  0.889 std:  0.003
+    xgboost  accuracy: mean:  0.886 max:  0.892 median:  0.889 std:  0.007

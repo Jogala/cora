@@ -1,0 +1,23 @@
+{
+    "editor.formatOnSave": true,
+    "notebook.formatOnSave.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "files.associations": {
+        "*.log": "log"
+    },
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingTypeArgument": "error",
+        "reportMissingReturnType": "error",
+        "reportMissingImports": "none",
+        "reportMissingModuleSource": "none",
+        // Add other Pylance diagnostics you want to disable here
+    },
+}
