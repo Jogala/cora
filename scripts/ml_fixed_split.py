@@ -79,7 +79,7 @@ fast_prop = getml.feature_learning.FastProp(
     loss_function=getml.feature_learning.loss_functions.CrossEntropyLoss,
     num_threads=10,
     aggregation=getml.feature_learning.aggregations.fastprop.Minimal,
-    num_features=600,
+    num_features=595,
 )
 
 multi_rel = getml.feature_learning.Multirel(
